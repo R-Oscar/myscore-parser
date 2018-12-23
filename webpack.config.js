@@ -8,12 +8,13 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   mode: 'development',
-  // devServer: {
-  //   // watchContentBase: true,
-  //   // publicPath: '/dist/',
-  //   hot: true
-  // },
-  plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
+  devServer: {
+    // watchContentBase: true,
+    // publicPath: '/dist/',
+    hot: true,
+    disableHostCheck: true
+  },
+  plugins: [new HtmlWebpackPlugin({ template: './index.html' }), new HotModuleReplacementPlugin()],
   module: {
     rules: [{ test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel-loader' }]
   },

@@ -4,7 +4,8 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "npx electron ."
+    "start": "npx electron .",
+    "server": "npx webpack-dev-server --open"
   },
   "keywords": [
     "Electron",
