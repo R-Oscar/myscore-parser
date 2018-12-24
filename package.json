@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npx electron .",
     "server": "npx webpack-dev-server --open",
-    "test:unit": "npx mocha --require @babel/register --require ./test/dom.js \"./src/**/*.spec.js*\"",
-    "test:unit:watch": "npm run test:unit -- --watch"
+    "test": "npx mocha --require @babel/register --require ./test/dom.js \"./src/*/*.{js,jsx}\" --watch-extensions jsx",
+    "test:watch": "npm test -- --watch"
   },
   "keywords": [
     "Electron",
@@ -19,6 +19,7 @@
   "author": "Oscar G",
   "license": "CC0-1.0",
   "dependencies": {
+    "@material-ui/core": "^3.7.1",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2"
   },
