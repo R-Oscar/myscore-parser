@@ -1,8 +1,11 @@
+import React from 'react';
+
 import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import Chip from '@material-ui/core/Chip';
 import MenuItem from '@material-ui/core/MenuItem';
 import CancelIcon from '@material-ui/icons/Cancel';
+import Typography from '@material-ui/core/Typography';
 
 function NoOptionsMessage(props) {
   return (
@@ -100,7 +103,7 @@ function Menu(props) {
   );
 }
 
-export default const components = {
+export const components = {
   Control,
   Menu,
   MultiValue,

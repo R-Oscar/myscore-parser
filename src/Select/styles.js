@@ -1,6 +1,6 @@
 import { emphasize } from '@material-ui/core/styles/colorManipulator';
 
-export default const styles = theme => ({
+export const styles = theme => ({
   root: {
     flexGrow: 1,
     height: 250

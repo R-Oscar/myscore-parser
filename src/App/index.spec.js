@@ -14,8 +14,8 @@ configure({ adapter: new Adapter() });
 describe('<App />', () => {
   const wrapper = shallow(<App />);
 
-  it('renders the p tags!', () => {
-    expect(wrapper.find(Typography)).to.have.lengthOf(3);
+  it('renders the Typography (header)!', () => {
+    expect(wrapper.find(Typography)).to.have.lengthOf(1);
   });
 
   it('renders Select components!', () => {

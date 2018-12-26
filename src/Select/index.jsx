@@ -5,8 +5,8 @@ import ReactSelect from 'react-select';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
-import styles from './styles';
-import components from './components';
+import { styles } from './styles';
+import { components } from './components';
 
 function CountrySelect({ title, classes, theme }) {
   const selectStyles = {
